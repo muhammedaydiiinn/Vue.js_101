@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJs Methods</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   
+</head>
+<body>
+    <div id="hesapla">
+        <input type="number" v-model.number="sayi1" placeholder="Birinci Sayı">
+        <br><br>
+        <input type="number" v-model.number="sayi2" placeholder="İkinci Sayı">
+        <br><br>
+        <button @click="sonuc = topla(sayi1, sayi2)">Topla</button>
+        <p>Sonuç: {{ sonuc }}</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
