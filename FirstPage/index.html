@@ -5,28 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJs Giriş</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin: 5px 0;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <h1>Kişisel Özellikler</h1>
-        <p>Ad : {{name}} {{surname}} </p>
-        <p>Meslek : {{job}} </p>
-        <p>Yaş : {{age}} </p>
+        <p><strong>Ad:</strong> {{ name }} {{ surname }}</p>
+        <p><strong>Meslek:</strong> {{ job }}</p>
+        <p><strong>Yaş:</strong> {{ age }}</p>
         
         <hr>
+        
         <h1>Giyim</h1>
-        <p>Şapkası var mı? : {{wear.hat}} </p>
-        <p>Elbise mi giymiş? : {{wear.clothes}} </p>
-        <p>T-shirt mi giymiş? : {{wear.t_shirt}} </p>
-        <p>Ayakkabısı var mı? : {{wear.shoes}} </p>
-        <p>Pantolon mu giymiş? : {{wear.pants}} </p>
-       <hr>
-        <h1>Özellik</h1>
-        <p> {{skills[0]}} </p>
-        <p> {{skills[1]}} </p>
+        <p><strong>Şapkası var mı?</strong> {{ wear.hat ? 'Evet' : 'Hayır' }}</p>
+        <p><strong>Elbise mi giymiş?</strong> {{ wear.clothes ? 'Evet' : 'Hayır' }}</p>
+        <p><strong>T-shirt mi giymiş?</strong> {{ wear.t_shirt ? 'Evet' : 'Hayır' }}</p>
+        <p><strong>Ayakkabısı var mı?</strong> {{ wear.shoes ? 'Evet' : 'Hayır' }}</p>
+        <p><strong>Pantolon mu giymiş?</strong> {{ wear.pants ? 'Evet' : 'Hayır' }}</p>
+        
+        <hr>
+        
+        <h1>Özellikler</h1>
+        <ul>
+            <li>{{ skills[0] }}</li>
+            <li>{{ skills[1] }}</li>
+        </ul>
     </div>
 
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
