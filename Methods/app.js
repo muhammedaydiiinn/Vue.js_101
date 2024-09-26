@@ -11,6 +11,15 @@ const { createApp } = Vue
         methods: {
             topla(sayi1, sayi2) {
                 return sayi1 + sayi2;
+            },
+            carp(sayi1, sayi2) {
+                return sayi1 * sayi2;
+            },
+            cıkar(sayi1, sayi2) {
+                return sayi1 - sayi2;
+            },
+            bol(sayi1, sayi2) {
+                return sayi1 / sayi2;
             }
         }
     }).mount('#hesapla')
