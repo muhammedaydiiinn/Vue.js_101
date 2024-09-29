@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Binding</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        <p>İsim: {{name}} </p>
+        <p>Meslek: {{job}} </p>
+        <p>Site: 
+            <br>
+           <!-- birinci Yöntem  --> <a v-bind:href="site">Google</a>
+            <br>
+           <!-- ikinci Yöntem  --> <a :href="site">Google</a>
+
+        </p>
+        <input type="text" :value="deger">
+        
+        <p v-html="directHtml"></p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

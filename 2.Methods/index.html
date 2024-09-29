@@ -11,6 +11,7 @@
     <div id="hesapla">
         <input type="number" v-model.number="sayi1" placeholder="Birinci Sayı">
         <br><br>
+        <!-- Burada da data binding yaptık-->
         <input type="number" v-model.number="sayi2" placeholder="İkinci Sayı">
         <br><br>
         <button @click="sonuc = topla(sayi1, sayi2)">Topla</button>
